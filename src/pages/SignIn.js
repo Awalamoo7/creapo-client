@@ -4,30 +4,13 @@ import CssBaseline from "@mui/material/CssBaseline";
 import TextField from "@mui/material/TextField";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
-import Link from "@mui/material/Link";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-
-function Copyright(props) {
-	return (
-		<Typography
-			variant="body2"
-			color="text.secondary"
-			align="center"
-			{...props}
-		>
-			{"Copyright © "}
-			<Link color="inherit" href="https://mui.com/">
-				Creapo.com
-			</Link>{" "}
-			{new Date().getFullYear()}
-			{"."}
-		</Typography>
-	);
-}
+import { Link } from "react-router-dom";
+import { Copyright } from "../atoms/copyright";
 
 // TODO remove, this demo shouldn't need to reset the theme.
 
@@ -99,14 +82,10 @@ export default function SignIn() {
 						</Button>
 						<Grid container>
 							<Grid item xs>
-								<Link href="#" variant="body2">
-									Forgot password?
-								</Link>
+								<Link to="">Forgot password?</Link>
 							</Grid>
 							<Grid item>
-								<Link to={"SignUp"} variant="body2">
-									{"Don't have an account? Sign Up"}
-								</Link>
+								<Link to="./signUp">Don't have an account? Sign Up</Link>
 							</Grid>
 						</Grid>
 					</Box>
