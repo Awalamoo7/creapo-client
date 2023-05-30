@@ -10,21 +10,7 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Link } from "react-router-dom";
-
-function Copyright(props) {
-	return (
-		<Typography
-			variant="body2"
-			color="text.secondary"
-			align="center"
-			{...props}
-		>
-			{"Copyright © "}
-			Your Website {new Date().getFullYear()}
-			{"."}
-		</Typography>
-	);
-}
+import { Copyright } from "../atoms/copyright";
 
 // TODO remove, this demo shouldn't need to reset the theme.
 
@@ -122,7 +108,7 @@ export default function SignUp() {
 						>
 							Sign Up
 						</Button>
-						<Grid container justifyContent="flex-end">
+						<Grid container justifyContent="center">
 							<Grid item>
 								<Link to="./signIn">Already have an account? Sign in</Link>
 							</Grid>
