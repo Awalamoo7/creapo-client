@@ -1,8 +1,5 @@
-import { Component } from "react";
-class Dashboard extends Component {
-	render() {
-		return Dashboard;
-	}
-}
+const Dashboard = () => {
+	return Dashboard;
+};
 
 export default Dashboard;
