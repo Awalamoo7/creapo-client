@@ -2,6 +2,7 @@ import { Route, Switch } from "react-router-dom";
 import "./App.css";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
+import Home from "./pages/home";
 
 function App() {
 	return (
@@ -10,6 +11,7 @@ function App() {
 				<Switch>
 					<Route path="/signIn" component={SignIn} />
 					<Route path="/signUp" component={SignUp} />
+					<Route path="/" component={Home} />
 				</Switch>
 			</div>
 		</div>
